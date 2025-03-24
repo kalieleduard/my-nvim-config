@@ -1,7 +1,8 @@
 -- ~/.config/nvim/lua/lsp/init.lua
 -- Carrega as configurações específicas para Go
 require('lsp.go')
-
+require('lsp.terraform')
+require('lsp.lua')
 -- Configuração do nvim-cmp para autocompletar
 local cmp = require('cmp')
 local luasnip = require('luasnip')
