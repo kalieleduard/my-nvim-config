@@ -1,11 +1,11 @@
 local lspconfig = require("lspconfig")
 
 lspconfig.terraformls.setup {
-	root_dir = function()
-		return vim.fn.stdpath('config')
-	end,
+	on_attach = _G.lsp_on_attach,
+	capabilities = _G.lsp_capabilities,
 }
 
 lspconfig.tflint.setup {
-
+	on_attach = _G.lsp_on_attach,
+	capabilities = _G.lsp_capabilities
 }
